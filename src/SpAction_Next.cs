@@ -12,13 +12,12 @@ namespace Do.Addins.Spotify
 	public class SpAction_Next : Item, IRunnableItem
 	{
 		public override string Name { get { return "Next"; } }
-		public override string Description { get { return "Play next track."; } }
+		public override string Description { get { return "Play next track in Spotify"; } }
 		public override string Icon { get { return "gtk-media-next"; } }
 
 		public void Run()
 		{
-			SpDBus sp = new SpDBus();
-			sp.Next();
+			new SpDBus().Next();
 		}
 	}
 }

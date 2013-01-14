@@ -20,6 +20,10 @@
     <File subtype="Code" buildaction="Compile" name="src/SpAction_Next.cs" />
     <File subtype="Code" buildaction="EmbedAsResource" name="Resources/Spotify.addin.xml" />
     <File subtype="Code" buildaction="Compile" name="src/SpItemSource.cs" />
+    <File subtype="Code" buildaction="Compile" name="src/SpAction_Previous.cs" />
+    <File subtype="Code" buildaction="Compile" name="src/SpAction_Pause.cs" />
+    <File subtype="Code" buildaction="Compile" name="src/SpAction_Play.cs" />
+    <File subtype="Code" buildaction="Compile" name="src/SpAction_Stop.cs" />
   </Contents>
   <References>
     <ProjectReference type="Gac" localcopy="True" refto="NDesk.DBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f6716e4f9b2ed099" />

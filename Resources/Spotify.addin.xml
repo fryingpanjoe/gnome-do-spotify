@@ -27,6 +27,10 @@
 	</Extension>
 	<Extension path="/Do/Action">
 		<Action type="Do.Addins.Spotify.SpAction_Next" />
+		<Action type="Do.Addins.Spotify.SpAction_Pause" />
+		<Action type="Do.Addins.Spotify.SpAction_Play" />
 		<Action type="Do.Addins.Spotify.SpAction_PlayPause" />
+		<Action type="Do.Addins.Spotify.SpAction_Previous" />
+		<Action type="Do.Addins.Spotify.SpAction_Stop" />
 	</Extension>
 </Addin>

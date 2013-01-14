@@ -19,12 +19,16 @@ namespace Do.Addins.Spotify
 
 			controls = new List<Item>();
 			controls.Add(new SpAction_Next());
+			controls.Add(new SpAction_Pause());
+			controls.Add(new SpAction_Play());
 			controls.Add(new SpAction_PlayPause());
+			controls.Add(new SpAction_Previous());
+			controls.Add(new SpAction_Stop());
 		}
 
 		public override string Name { get { return "Spotify"; } }
-		public override string Description { get { return "Control the Spotify client."; } }
-		public override string Icon { get { return "spotify-icon"; } }
+		public override string Description { get { return "Spotify remote control."; } }
+		public override string Icon { get { return "spotify"; } }
 		
 		public override IEnumerable<Type> SupportedItemTypes {
 			get { 

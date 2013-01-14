@@ -9,15 +9,15 @@ using Do.Universe;
 
 namespace Do.Addins.Spotify
 {
-	public class SpAction_PlayPause : Item, IRunnableItem
+	public class SpAction_Play : Item, IRunnableItem
 	{
-		public override string Name { get { return "Play/Pause"; } }
-		public override string Description { get { return "Play/pause current track in Spotify"; } }
+		public override string Name { get { return "Play"; } }
+		public override string Description { get { return "Play current track in Spotify"; } }
 		public override string Icon { get { return "gtk-media-play"; } }
 
 		public void Run()
 		{
-			new SpDBus().PlayPause();
+			new SpDBus().Play();
 		}
 	}
 }
