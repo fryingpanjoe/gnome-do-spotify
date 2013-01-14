@@ -26,7 +26,7 @@
 		<ItemSource type="Do.Addins.Spotify.SpItemSource" />
 	</Extension>
 	<Extension path="/Do/Action">
-		<Action type="Spotify.SpAction_Next" />
-		<Action type="Spotify.SpAction_PlayPause" />
+		<Action type="Do.Addins.Spotify.SpAction_Next" />
+		<Action type="Do.Addins.Spotify.SpAction_PlayPause" />
 	</Extension>
 </Addin>
