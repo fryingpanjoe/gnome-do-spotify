@@ -40,7 +40,6 @@ namespace Do.Addins.Spotify
 
 		static SpDBus()
 		{
-			// Listen for coming/going of Spotify service
 			org.freedesktop.DBus.IBus sessionBus = Bus.Session.GetObject<org.freedesktop.DBus.IBus>(
 				"org.freedesktop.DBus", new ObjectPath("/org/freedesktop/DBus"));
 			sessionBus.NameOwnerChanged += OnDBusNameOwnerChanged;
@@ -54,10 +53,8 @@ namespace Do.Addins.Spotify
 		{
 			if (serviceName == BUS_NAME) {
 				if (oldOwner == null && newOwner.Length > 0) {
-					// Service has started
 					SetInstance();
 				} else {
-					// Service has ended
 					spotify = null;
 				}
 			}
@@ -140,11 +137,11 @@ namespace Do.Addins.Spotify
 			spotify.Seek(offset);
 		}
 		
-		//public void SetPosition(string trackId, int position)
-		//{
-		//	EnsureSpotifyInstance();
-		//	spotify.SetPosition(trackId, position);
-		//}
+		/*public void SetPosition(string trackId, int position)
+		{
+			EnsureSpotifyInstance();
+			spotify.SetPosition(trackId, position);
+		}*/
 		
 		public void OpenUri(string uri)
 		{
